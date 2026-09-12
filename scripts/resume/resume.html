@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 16mm 20mm 14mm 20mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Liberation Sans', Arial, Helvetica, sans-serif;
+    color: #14161a;
+    font-size: 10.3pt;
+    line-height: 1.42;
+    margin: 0;
+  }
+  h1 { font-size: 21pt; margin: 0 0 3px; letter-spacing: -0.01em; }
+  .role { font-size: 12pt; color: #2563eb; margin: 0 0 8px; font-weight: 700; }
+  .contact { font-size: 9.6pt; color: #4b5563; margin-bottom: 8px; }
+  .contact a { color: #4b5563; text-decoration: none; }
+  .badge {
+    display: inline-block; background: #e7f8f3; color: #0ea885;
+    font-size: 8.6pt; font-weight: 700; padding: 3px 11px; border-radius: 999px;
+    margin-bottom: 4px;
+  }
+  h2.section {
+    font-size: 10.6pt; text-transform: uppercase; letter-spacing: 0.06em;
+    color: #2563eb; border-bottom: 1.2px solid #e2e5eb; padding-bottom: 3px;
+    margin: 16px 0 8px;
+  }
+  .summary { margin: 0 0 2px; color: #23262b; }
+  .skills-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px 18px; font-size: 9pt;
+  }
+  .skills-grid div { color: #23262b; }
+  .skills-grid b { color: #14161a; }
+  .job { margin-bottom: 8px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-head .co { font-weight: 700; font-size: 10.2pt; }
+  .job-head .period { font-size: 8.8pt; color: #6b7280; font-weight: 600; white-space: nowrap; }
+  .job-sub { font-size: 9pt; color: #2563eb; font-weight: 600; margin-bottom: 3px; }
+  ul.bullets { margin: 3px 0 0; padding-left: 13px; }
+  ul.bullets li { margin-bottom: 2px; }
+  .earlier-block { margin-top: 2px; }
+  .earlier-item { margin-bottom: 3px; font-size: 9.1pt; }
+  .earlier-item .co { font-weight: 700; }
+  .earlier-item .period { color: #6b7280; font-size: 8.6pt; }
+  .os-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 18px; font-size: 8.9pt; }
+  .os-item .t { font-weight: 700; }
+  .edu-row { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 9.2pt; }
+  .edu-row:last-child { margin-bottom: 0; }
+  .edu-left .inst { font-weight: 700; }
+  .edu-left .cred { color: #23262b; }
+  .edu-left .note { color: #6b7280; font-size: 8.4pt; }
+  .edu-right { color: #6b7280; font-size: 8.6pt; white-space: nowrap; text-align: right; }
+</style>
+</head>
+<body>
+
+  <h1>Seong Wuk (Steve) Park</h1>
+  <div class="role">Software Engineer, Mobile Specialist</div>
+  <div class="contact">
+    Auckland, New Zealand &nbsp;·&nbsp; seongwuk.park@gmail.com &nbsp;·&nbsp;
+    linkedin.com/in/goodexpert &nbsp;·&nbsp; github.com/goodexpert &nbsp;·&nbsp; goodexpert.github.io
+  </div>
+  <div class="badge">NZ Citizen — Full Work Rights in Australia &amp; New Zealand · Open to relocating to Melbourne or Sydney</div>
+
+  <h2 class="section">Summary</h2>
+  <p class="summary">
+    Software engineer with 15+ years of experience specializing in mobile — building multiplatform clients, SDKs, and
+    the cloud systems behind them. Experience spans real-time streaming infrastructure, agency-scale white-label
+    delivery across concurrent codebases, building an Android engineering organization from zero, native iOS payments
+    delivery, consolidating a no-code design tool's interaction engine into a single Kotlin Multiplatform codebase, and
+    architecting a modular Android app serving multiple markets from one codebase.
+  </p>
+
+  <h2 class="section">Core Skills</h2>
+  <div class="skills-grid">
+    <div><b>Kotlin Multiplatform</b> — shared core logic across iOS, Android &amp; Web (KMP/KMM)</div>
+    <div><b>Performance &amp; Algorithms</b> — memory, rendering &amp; load-time optimization</div>
+    <div><b>Cloud &amp; Real-Time Infrastructure</b> — AWS-based live broadcast &amp; streaming systems</div>
+    <div><b>0→1 Org &amp; Product Building</b> — built an Android org &amp; its first QA process from zero</div>
+    <div><b>Modular / Multi-Market Architecture</b> — one codebase serving multiple markets</div>
+    <div><b>Cross-Platform Leadership</b> — embedded, mobile &amp; cloud simultaneously</div>
+  </div>
+
+  <h2 class="section">Experience</h2>
+
+  <div class="job">
+    <div class="job-head"><span class="co">Woolworths — Senior Android Developer</span><span class="period">2024 – Present</span></div>
+    <ul class="bullets">
+      <li>Own NZ market-entry execution into a shared AU/NZ codebase and built a BFF-driven CMS component system so marketing content ships without app releases</li>
+      <li>Led the Gigya→Auth0 identity migration, including a deliberate mid-rollout rollback and a safe re-landing afterward</li>
+      <li>Delivered a Room database schema migration (v25→v26) with full test coverage for a multibuy pricing feature</li>
+      <li>197 pull requests merged and ~29K net lines of code shipped over 24 months</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">StudioXID (ProtoPie) — Senior Software Engineer</span><span class="period">2022 – 2024</span></div>
+    <ul class="bullets">
+      <li>Consolidated ProtoPie's interaction engine (trigger-action rules, rendering, animation) into a single Kotlin Multiplatform codebase shared across iOS, Android, and Web</li>
+      <li>Extended KMP to tvOS and watchOS, and shipped a visionOS build within ~2 months of Vision Pro's general availability</li>
+      <li>Cut memory footprint 20%, improved interaction-engine throughput 10–15%, and improved initial content load time 10–20%</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">PIXO — Senior Mobile Engineer, Android Lead</span><span class="period">2020 – 2022</span></div>
+    <ul class="bullets">
+      <li>Solo-shipped Focus Keeper (Kotlin Pomodoro app) to Google Play in ~7 weeks, then founded the Android department and built the company's first QA process</li>
+      <li>Led the org's first Kotlin Multiplatform rollout (LogoMaker, 11 months), building a shared Billing/Analytics/Network/Storage library across a 4-repository platform split</li>
+      <li>Adopted Jetpack Compose in production ~4 months after its 1.0 GA; pivoted from a self-built CMS to headless CMS (Contentful) for app-release-free content updates</li>
+      <li>Reviewed 250+ team pull requests across the org's Android lifetime</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">Xplor Technologies (Clubware NZ) — Senior Mobile Engineer</span><span class="period">2022</span></div>
+    <ul class="bullets">
+      <li>Owned the "Pay Overdue" feature end to end on SwiftUI, integrating a WebView-based payment-provider flow with a custom native numpad UI; shipped the Payment Method feature alongside it</li>
+      <li>305 of the app's 5,402 total commits during a ~7-month engagement, backed by automation test coverage across backend and payment-provider paths</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">FrequencyNZ — Contract Full-Stack Developer</span><span class="period">2020</span></div>
+    <ul class="bullets">
+      <li>Shipped COVID-19 contact-tracing across React/Redux, C#/.NET Azure Functions, Kotlin (Android), and Swift (iOS) in a two-month contract (171 commits across all four stacks)</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">Coretex — Software Engineer (Contract)</span><span class="period">2019 – 2020</span></div>
+    <ul class="bullets">
+      <li>Built Android fleet-management features backed by AWS Lambda serverless functions for a production fleet-tracking product, owning both client and backend service layers</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><span class="co">Marker Studio — Senior Software Engineer</span><span class="period">2016 – 2019</span></div>
+    <ul class="bullets">
+      <li>Shipped a production BLE/iBeacon luggage-tracking feature (Estimote SDK, custom radar view) across 4 white-label Serko apps for an NZX-listed travel client; hardened security with TLS certificate pinning and encrypted (Jasypt) PIN storage</li>
+      <li>Shipped the org's first production Kotlin app (WorldVision, Sept 2017) ~4 months after Kotlin's Google I/O announcement</li>
+      <li>495 commits across Serko's 11 white-label brand variants; 164 commits across Adeption's 3 brand variants</li>
+    </ul>
+  </div>
+
+  <div class="earlier-block">
+    <div class="earlier-item"><span class="co">YESSHOP</span> — Software Engineer <span class="period">(2015–2016)</span> — built backend systems end-to-end for a TV-based home shopping platform on the company's in-house X2Framework, covering inventory management and order dispatch.</div>
+    <div class="earlier-item"><span class="co">Emcor Consulting</span> — Technical Lead <span class="period">(2015)</span> — led a 6-person development team delivering client projects across POS and web/mobile services.</div>
+    <div class="earlier-item"><span class="co">Megatel</span> — Senior Software Engineer <span class="period">(2012–2015)</span> — rebuilt a real-time IPTV service end to end: set-top box, iOS/Android apps, and an AWS-based live-broadcast relay pipeline.</div>
+    <div class="earlier-item"><span class="co">Zenitum</span>, Seoul — Senior Researcher &amp; Software Engineer <span class="period">(2009–2011)</span> — developed high-speed Natural Feature Tracking AR engines optimized for ARM cores; lead architect and iOS developer for corporate AR projects, including work for Hyundai Capital.</div>
+  </div>
+
+  <h2 class="section">Education</h2>
+  <div class="edu-row">
+    <div class="edu-left">
+      <div class="inst">Hanyang University — Graduate School</div>
+      <div class="cred">Graduate Coursework, Intelligent Robot Engineering <span class="note">— coursework completed; thesis not submitted</span></div>
+    </div>
+    <div class="edu-right">2009–2010</div>
+  </div>
+  <div class="edu-row">
+    <div class="edu-left">
+      <div class="inst">Dankook University</div>
+      <div class="cred">Bachelor of Engineering, Electronic Engineering <span class="note">— NZQA-assessed as equivalent to a NZ Bachelor of Engineering Technology, Level 7</span></div>
+    </div>
+    <div class="edu-right">1992–2003</div>
+  </div>
+
+  <h2 class="section">Open Source &amp; Personal Projects</h2>
+  <div class="os-grid">
+    <div class="os-item"><span class="t">PinBlock.mobile</span> — cross-platform (KMP) PIN block encoding/decoding for payment card processing</div>
+    <div class="os-item"><span class="t">SVGView (open-source)</span> — fixed two rendering bugs in an 854★ SwiftUI library (PR #46, #47)</div>
+    <div class="os-item"><span class="t">Jetpack Compose Dev Challenge</span> — Google's official #AndroidDevChallenge submission, pre-1.0 Compose adoption</div>
+    <div class="os-item"><span class="t">RideFit</span> — Android POC (TTS, Firebase Remote Config, Fastlane pipeline), in alpha testing</div>
+  </div>
+
+</body>
+</html>

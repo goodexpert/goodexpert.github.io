@@ -14,6 +14,7 @@ const content = {
       "New Zealand Citizen — Full Work Rights in Australia & New Zealand · Open to relocating to Melbourne or Sydney",
     interviewAvailability:
       "Only 2–3 hours ahead of Australian time zones — flexible for interviews within AU business hours",
+    resumeUrl: "assets/resume.pdf",
 
     heroTagline:
       "I'm a software engineer specializing in mobile — building multiplatform clients and the SDKs and cloud systems behind them.",
@@ -413,6 +414,7 @@ function renderHome() {
       <p class="lede">${data.heroSub}</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="#/projects">View Projects</a>
+        <a class="btn btn-outline" href="${data.resumeUrl}" target="_blank" rel="noopener">Download Résumé</a>
         <a class="btn btn-outline" href="mailto:${data.email}">Get in Touch</a>
       </div>
       <div class="hero-stats">
@@ -595,6 +597,7 @@ function renderAbout() {
           <div class="contact-row">✉️ <a href="mailto:${data.email}">${data.email}</a></div>
           <div class="contact-row">🔗 <a href="${data.github}" target="_blank" rel="noopener">github.com/goodexpert</a></div>
           <div class="contact-row">💼 <a href="${data.linkedin}" target="_blank" rel="noopener">linkedin.com/in/goodexpert</a></div>
+          <a class="btn btn-outline" style="margin-top:18px;" href="${data.resumeUrl}" target="_blank" rel="noopener">Download Résumé (PDF)</a>
         </div>
       </div>
     </section>
